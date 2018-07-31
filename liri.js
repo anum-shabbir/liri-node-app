@@ -158,7 +158,12 @@ if (command === "my-tweets") {
 		}
 	});
 } else if (command === undefined) { // use case where no command is given
-	console.log("Please enter a command to run LIRI.")
+    console.log("----------------------------------------------");
+    console.log("Please enter a command to run LIRI: ");
+    console.log("my-tweets \nspotify-this-song \nmovie-this \ndo-what-it-says ");
 } else { // use case where command is given but not recognized
-	console.log("Command not recognized! Please try again.")
+    console.log("----------------------------------------------");
+    console.log("Command not recognized! Please try again from following commands: ");
+    console.log("my-tweets \nspotify-this-song \nmovie-this \ndo-what-it-says ");
+}
 }
